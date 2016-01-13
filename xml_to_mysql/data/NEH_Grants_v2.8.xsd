@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Grants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="Grant">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ApplicantType" type="xs:string" />
+                            <xs:element name="Institution" type="xs:string" />
+                            <xs:element name="OrganizationType" type="xs:string" />
+                            <xs:element name="InstCity" type="xs:string" />
+                            <xs:element name="InstState" type="xs:string" />
+                            <xs:element name="InstPostalCode" type="xs:string" />
+                            <xs:element name="InstCountry" type="xs:string" />
+                            <xs:element name="CouncilDate" type="xs:date" />
+                            <xs:element name="YearAwarded" type="xs:unsignedShort" />
+                            <xs:element name="ProjectTitle" type="xs:string" />
+                            <xs:element name="Program" type="xs:string" />
+                            <xs:element name="Division" type="xs:string" />
+                            <xs:element name="ApprovedOutright" type="xs:decimal" />
+                            <xs:element name="ApprovedMatching" type="xs:decimal" />
+                            <xs:element name="AwardOutright" type="xs:decimal" />
+                            <xs:element name="AwardMatching" type="xs:decimal" />
+                            <xs:element name="OriginalAmount" type="xs:decimal" />
+                            <xs:element minOccurs="0" name="SupplementAmount" type="xs:decimal" />
+                            <xs:element name="BeginGrant" type="xs:dateTime" />
+                            <xs:element name="EndGrant" type="xs:dateTime" />
+                            <xs:element name="ProjectDesc" />
+                            <xs:element name="ToSupport" type="xs:string" />
+                            <xs:element name="PrimaryDiscipline" type="xs:string" />
+                            <xs:element name="SupplementCount" type="xs:unsignedByte" />
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="Supplement">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="SupplementDate" type="xs:dateTime" />
+                                        <xs:element name="OutrightAmount" type="xs:decimal" />
+                                        <xs:element name="MatchAmount" type="xs:decimal" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ParticipantCount" type="xs:unsignedByte" />
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="Participant">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Firstname" type="xs:string" />
+                                        <xs:element name="Lastname" type="xs:string" />
+                                        <xs:element name="Institution" type="xs:string" />
+                                        <xs:element name="City" type="xs:string" />
+                                        <xs:element name="State" type="xs:string" />
+                                        <xs:element name="Country" type="xs:string" />
+                                        <xs:element name="ParticipantTypeID" type="xs:string" />
+                                        <xs:element name="ValidFr" type="xs:dateTime" />
+                                        <xs:element minOccurs="0" name="ValidTo" type="xs:dateTime" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DisciplineCount" type="xs:unsignedByte" />
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="Discipline">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Name" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="AppNumber" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
