@@ -2,16 +2,16 @@
 ### Parse XML and insert in SQL database with Java 8
 
 
-###-----com.briancrodriguez.etl package
-###-DataInserter.java
-###-Main.java
-###-Strings.java
-###-XMLReader.java
-###-XMLToSQL.java
+##-----com.briancrodriguez.etl package
+#-DataInserter.java
+#-Main.java
+#-Strings.java
+#-XMLReader.java
+#-XMLToSQL.java
 
-###-----com.briancrodriguez.etl.utilis package
-###-DBConnection.java
-###-Tabletruncater.java
+##-----com.briancrodriguez.etl.utilis package
+#-DBConnection.java
+#-Tabletruncater.java
 
 ###  Notes:
 Main class instantiates the table truncater class; purges table – see TableTruncater comments.
