@@ -1,18 +1,18 @@
 # xml to sql
-### Parse XML and insert in SQL database with Java 8
+#### Parse XML and insert in SQL database with Java 8
 
-##-----com.briancrodriguez.etl package
+###-----com.briancrodriguez.etl package
 -DataInserter.java
--Main.java
+-Main.java <br />
 -Strings.java
 -XMLReader.java
 -XMLToSQL.java
 
-##-----com.briancrodriguez.etl.utilis package
+###-----com.briancrodriguez.etl.utilis package
 -DBConnection.java
 -Tabletruncater.java
 
-###  Notes:
+####  Notes:
 Main class instantiates the table truncater class; purges table – see TableTruncater comments.
 Main class instantiates XMLReader and DataInserter classes – see comments.
 XMLReader loads XML file, produces list of maps of type string, string of nodes that exist in the XMLToSQL Map and returns said list - see comments.
