@@ -1,6 +1,5 @@
 # xml to sql
 ##### Parse XML and insert into SQL database with Java 8
-
 ######---com.briancrodriguez.etl package
 -Main.java <br />
 -Strings.java <br />
