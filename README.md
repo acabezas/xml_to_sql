@@ -13,7 +13,7 @@
 ####-DBConnection.java
 ####-Tabletruncater.java
 
-Notes:
+###  Notes:
 ####Main class instantiates the table truncater class; purges table – see TableTruncater comments.
 ####Main class instantiates XMLReader and DataInserter classes – see comments.
 ####XMLReader loads XML file, produces list of maps of type string, string and returns said list - see comments.
