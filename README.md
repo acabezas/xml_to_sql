@@ -25,5 +25,5 @@
 
 ####XMLToSQLMap is the hashmap object for identifying element nodes to insert into database.
 
-	####DBConnection class uses singleton design pattern for a database connection object.
+####DBConnection class uses singleton design pattern for a database connection object.
 
